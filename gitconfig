@@ -1,0 +1,5 @@
+[user]
+	name = David Crow
+	email = davidrheacrow@gmail.com
+[core]
+	excludesfile = /Users/davidcrow/Developer/dotfiles/gitignore
