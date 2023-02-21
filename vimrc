@@ -2,8 +2,17 @@
 " Vi-compatibility mode and enables useful Vim functionality.
 set nocompatible
 
+" set new <Leader>
+let mapleader = ","
+
 " Turn on syntax highlighting.
 syntax on
+
+" Turn on highlight search
+set hlsearch
+
+" Press Space to turn off highlighting and clear any message already displayed.
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 " Disable the default Vim startup message.
 set shortmess+=I
@@ -65,3 +74,8 @@ inoremap <Left>  <ESC>:echoe "Use h"<CR>
 inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
+
+" ======= plugins =======
+
+" use just one <Leader> (instead of the default two) for easymotion
+map <Leader> <Plug>(easymotion-prefix)
